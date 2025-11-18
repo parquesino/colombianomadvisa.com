@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NWVCKXZN');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,108 +21,403 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1389509355423812&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Complete Guide to the Colombia Digital Nomad Visa (2025)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Typography Plugin for better article formatting -->
-    <script src="https://cdn.tailwindcss.com/3.4.1?plugins=typography"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
+        /* --- CSS RESET & BASIC VARIABLES --- */
+        :root {
+            --blue-800: #1e40af;
+            --blue-600: #2563eb;
+            --blue-200: #bfdbfe;
+            --blue-50: #eff6ff;
+            --green-600: #16a34a;
+            --green-500: #22c55e;
+            --gray-900: #111827;
+            --gray-800: #1f2937;
+            --gray-700: #374151;
+            --gray-500: #6b7280;
+            --gray-100: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            line-height: 1.6;
             scroll-behavior: smooth;
         }
-        /* Applying prose styles for rich text */
-        .prose h2 { @apply text-3xl font-bold text-blue-800 mt-12 mb-6 border-b pb-2; }
-        .prose h3 { @apply text-2xl font-bold text-gray-800 mt-10 mb-4; }
-        .prose h4 { @apply text-xl font-semibold text-gray-800 mt-8 mb-3; }
-        .prose p, .prose li { @apply text-lg text-gray-700 leading-relaxed; }
-        .prose ul { @apply list-disc list-inside space-y-2 my-6; }
-        .prose ol { @apply list-decimal list-inside space-y-3 my-6; }
-        .prose a { @apply text-blue-600 hover:underline; }
-        .prose strong { @apply font-semibold text-gray-900; }
-        .prose blockquote { @apply border-l-4 border-blue-500 bg-blue-50 p-4 my-6 italic; }
-        .prose blockquote p { @apply text-blue-800 not-italic; }
+
+        a { text-decoration: none; color: inherit; }
+        ul, ol { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile: 1 column */
+            gap: 2rem;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-layout {
+                /* CORRECCIÓN DE COLUMNAS: 
+                   350px para el menú lateral (izquierda), 
+                   1fr (resto) para el contenido (derecha) */
+                grid-template-columns: 350px 1fr; 
+                gap: 3rem;
+            }
+        }
+
+        .hidden { display: none; }
+        .block { display: block; }
+        .text-center { text-align: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-12 { margin-top: 3rem; }
+        .w-full { width: 100%; }
         
-        .sticky-nav {
+        /* --- NAVIGATION --- */
+        nav {
+            background-color: var(--white);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             position: sticky;
-            top: 6rem; /* 80px nav height + 16px space */
+            top: 0;
+            z-index: 50;
         }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-switch {
+            font-size: 0.875rem;
+        }
+        .lang-switch span { color: var(--blue-600); font-weight: bold; }
+        .lang-switch a { color: var(--gray-500); }
+        .lang-switch a:hover { color: var(--blue-600); }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-green {
+            background-color: var(--green-500);
+            color: var(--white);
+        }
+        .btn-green:hover { background-color: var(--green-600); }
+
+        .btn-blue {
+            background-color: var(--blue-600);
+            color: var(--white);
+        }
+        .btn-blue:hover { background-color: #1d4ed8; }
+
+        /* --- HERO SECTION --- */
+        header {
+            background-color: var(--blue-800);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        header p {
+            color: var(--blue-200);
+            font-size: 1.125rem;
+            margin-top: 1rem;
+        }
+
+        /* --- ARTICLE CONTENT --- */
+        .article-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 640px) { .article-card { padding: 3rem; } }
+
+        .prose h2 { 
+            font-size: 1.875rem; 
+            font-weight: 700; 
+            color: var(--blue-800); 
+            margin-top: 3rem; 
+            margin-bottom: 1.5rem; 
+            border-bottom: 1px solid #e5e7eb; 
+            padding-bottom: 0.5rem; 
+        }
+        
+        .prose h3 { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--gray-800); 
+            margin-top: 2.5rem; 
+            margin-bottom: 1rem; 
+        }
+
+        .prose p, .prose li { 
+            font-size: 1.125rem; 
+            color: var(--gray-700); 
+            margin-bottom: 1.25rem; 
+            line-height: 1.75;
+        }
+
+        .prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .prose ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .prose strong { font-weight: 600; color: var(--gray-900); }
+        .prose a { color: var(--blue-600); text-decoration: underline; }
+        
+        .prose blockquote { 
+            border-left: 4px solid var(--blue-600); 
+            background-color: var(--blue-50); 
+            padding: 1rem; 
+            margin: 1.5rem 0; 
+            font-style: italic; 
+        }
+        .prose blockquote p { color: var(--blue-800); margin: 0; font-style: normal; }
+
+        /* --- VIDEO WRAPPER --- */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            margin: 2rem 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            /* Make sure sidebar is first visual element on desktop */
+            order: -1;
+        }
+        
+        /* On Mobile, we want sidebar at the bottom (order 2) */
+        @media (max-width: 1023px) {
+            .sidebar { order: 2; }
+        }
+
+        .sticky-wrapper {
+            position: sticky;
+            top: 7rem;
+        }
+
+        .sidebar-box {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-box h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
+        .sidebar-list li { margin-bottom: 0.5rem; }
+        .sidebar-list a { color: var(--gray-700); font-weight: 500; }
+        .sidebar-list a:hover { color: var(--blue-600); }
+
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--gray-100);
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* --- CAMILA'S HACKS --- */
+        .camilas-hack-box {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,.07);
+            border-left: 8px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        .hack-header { display: flex; align-items: center; margin-bottom: 15px; }
+        .hack-icon { font-size: 2rem; margin-right: 15px; line-height: 1; }
+        .hack-title { font-size: 1.3rem; font-weight: 700; color: #2c3e50; line-height: 1.3; }
+        .hack-title span { display: block; font-size: .9rem; font-weight: 500; color: #555; margin-bottom: 2px; }
+        .camilas-hack-box.pro-tip { border-left-color: #3498db; }
+        .pro-tip .hack-icon { color: #3498db; }
+        .camilas-hack-box.warning { border-left-color: #e74c3c; }
+        .warning .hack-icon { color: #e74c3c; }
+
+        /* --- TIMELINE --- */
+        #timeline-line { position: absolute; left: 1.5rem; width: 2px; background-color: #cbd5e1; top: 1.5rem; bottom: 1.5rem; }
+        #timeline-steps { position: relative; }
+        .timeline-step { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .timeline-icon { position: absolute; left: 1.5rem; top: .25rem; transform: translateX(-50%); background-color: #FFCD00; color: #003893; border-radius: 50%; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; font-weight: 700; z-index: 10; }
+        .timeline-icon-blue { background-color: #003893; color: white; }
+        .timeline-icon-red { background-color: #C8102E; color: white; }
+        .timeline-icon-green { background-color: #10B981; color: white; }
+        .timeline-content { padding: 1.5rem; background-color: white; border-radius: .5rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1); }
+        .timeline-content h3 { margin-top: 0 !important; font-size: 1.125rem !important; font-weight: 600; margin-bottom: 0.5rem; }
+        .timeline-content span { display: inline-flex; background-color: #fefce8; color: #a16207; font-size: .75rem; font-weight: 500; padding: .25rem .5rem; border-radius: 9999px; }
+        .timeline-content-blue span { background-color: #dbeafe; color: #1d4ed8; }
+        .timeline-content-red span { background-color: #ffe4e6; color: #be123c; }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--gray-900);
+            color: var(--gray-500);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        footer a:hover { color: var(--blue-200); }
+
+        /* --- COOKIE BANNER --- */
+        #cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--gray-800);
+            color: white;
+            padding: 1rem;
+            display: none; /* controlled by JS */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            z-index: 100;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            #cookie-consent-banner { flex-direction: row; }
+        }
+
+        /* --- BIO BOX --- */
+        .bio-box {
+            margin: 3rem 0;
+            padding: 2rem;
+            background-color: var(--blue-50);
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--blue-600);
+            text-align: center;
+        }
+        .bio-img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* --- FAQ --- */
         .faq-item {
-            @apply bg-white p-6 rounded-lg shadow-sm;
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
         }
-        /* Custom styles for Camila's Hack modules */
-        .camilas-hack-box{background-color:#fff;border-radius:8px;padding:25px 30px;margin: 2rem 0;box-shadow:0 5px 20px rgba(0,0,0,.07);border-left:8px solid;position:relative;overflow:hidden}.hack-header{display:flex;align-items:center;margin-bottom:15px}.hack-icon{font-size:2rem;margin-right:15px;line-height:1}.hack-title{font-size:1.3rem;font-weight:700;color:#2c3e50;line-height:1.3}.hack-title span{display:block;font-size:.9rem;font-weight:500;color:#555;margin-bottom:2px}.hack-text p,.hack-text ul{font-size:1rem !important;line-height:1.7 !important;color:#333 !important;margin:0 0 1em !important}.hack-text p:last-child,.hack-text ul:last-child{margin-bottom:0 !important}.hack-text strong{font-weight:700}.hack-text ul{padding-left:20px !important;list-style-type:disc !important}.hack-text a{color:#3498db;text-decoration:underline;font-weight:500}.hack-text a:hover{color:#2980b9}.camilas-hack-box.pro-tip{border-left-color:#3498db}.pro-tip .hack-icon{color:#3498db}.camilas-hack-box.warning{border-left-color:#e74c3c}.warning .hack-icon{color:#e74c3c}
-    
-        /* Roadmap Styles */
-        #timeline-line{position:absolute;left:1.5rem;width:2px;background-color:#cbd5e1;top:1.5rem;bottom:1.5rem}
-        #timeline-steps{position:relative}
-        .timeline-step{position:relative;padding-left:4rem; margin-bottom: 2.5rem;}
-        .timeline-icon{position:absolute;left:1.5rem;top:.25rem;transform:translateX(-50%);background-color:#FFCD00;color:#003893;border-radius:9999px;width:3rem;height:3rem;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:700;z-index:10}
-        .timeline-icon-blue{background-color:#003893;color:white;}
-        .timeline-icon-red{background-color:#C8102E;color:white;}
-        .timeline-icon-green{background-color:#10B981;color:white;}
-        .timeline-content{padding:1.5rem;background-color:white;border-radius:.5rem;border:1px solid #e2e8f0;box-shadow:0 1px 3px 0 rgba(0,0,0,.1)}
-        .timeline-content h3{margin-top:0 !important;font-size:1.125rem !important;font-weight:600 !important;color:#1e293b !important; margin-bottom: 0.5rem !important;}
-        .timeline-content span{display:inline-flex;align-items:center;background-color:#fefce8;color:#a16207;font-size:.75rem;font-weight:500;padding:.25rem .5rem;border-radius:9999px;margin-top:.25rem}
-        .timeline-content-blue span{background-color:#dbeafe;color:#1d4ed8;}
-        .timeline-content-red span{background-color:#ffe4e6;color:#be123c;}
-        .timeline-content p{font-size:.875rem !important;color:#475569 !important;margin-top:.75rem !important}
+        .faq-item h3 { font-size: 1.25rem; font-weight: 700; color: var(--gray-900); margin-top: 0; margin-bottom: 0.5rem; }
+        .faq-item p { font-size: 1rem; color: var(--gray-700); }
+
     </style>
 </head>
-<body class="bg-gray-100">
-    <!-- Google Tag Manager (noscript) -->
+<body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWVCKXZN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- NAV -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0">
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div>
                     <a href="https://www.colombianpassport.com" title="Colombian Passport Home">
-                        <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="Colombian Passport Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
+                        <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="Colombian Passport Logo" class="logo-img" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
                     </a>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <div class="text-sm">
-                        <span class="font-bold text-blue-600">EN</span>
-                        <span class="text-gray-300">|</span>
-                        <a href="es.html" class="text-gray-500 hover:text-blue-600">ES</a>
+                <div class="nav-links">
+                    <div class="lang-switch">
+                        <span>EN</span>
+                        <span style="color: #ccc;">|</span>
+                        <a href="es.html">ES</a>
                     </div>
-                    <a href="https://wa.me/573223395612?text=Hello%20Camila,%20I%20have%20a%20question%20about%20the%20Digital%20Nomad%20Visa." target="_blank" class="hidden sm:inline-block btn bg-green-500 text-white hover:bg-green-600 focus:ring-green-400 py-2 px-4 text-sm rounded-md font-semibold" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Contact on WhatsApp</a>
+                    <a href="https://wa.me/573223395612?text=Hello%20Camila,%20I%20have%20a%20question%20about%20the%20Digital%20Nomad%20Visa." target="_blank" class="btn btn-green" style="display: none;">Contact on WhatsApp</a>
+                    <style> @media(min-width:640px){ .btn-green { display: inline-block !important; } } </style>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="bg-blue-800 text-white py-16 md:py-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">The Unfiltered Guide to Colombia's Digital Nomad Visa</h1>
-            <p class="mt-4 text-lg md:text-xl text-blue-200 max-w-3xl mx-auto">(Last updated September 29, 2025)</p>
+    <header>
+        <div class="container">
+            <h1>The Unfiltered Guide to Colombia's Digital Nomad Visa</h1>
+            <p>(Last updated September 29, 2025)</p>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div class="grid lg:grid-cols-4 gap-8 lg:gap-12">
+    <main class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+        <div class="grid-layout">
             
-            <!-- Main Content (The Guide) -->
-            <article class="lg:col-span-3 bg-white p-8 sm:p-10 lg:p-12 rounded-lg shadow-lg prose max-w-none">
+            <article class="article-card prose">
                 
                 <section id="intro">
                     <h2>Your Ticket Out of the Rat Race</h2>
 
-                    <!-- ===== INICIO DEL BLOQUE DE VÍDEO ===== -->
-                    <div class="relative w-full aspect-video my-8 not-prose">
+                    <div class="video-wrapper">
                         <iframe 
-                            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md" 
                             src="https://www.youtube.com/embed/_VMqBZQBhY0" 
                             title="YouTube video player" 
                             frameborder="0" 
@@ -134,25 +425,24 @@
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <!-- ===== FIN DEL BLOQUE DE VÍDEO ===== -->
 
-                    <p class="text-xl leading-relaxed">Picture this: it's 9 AM on a Tuesday. Instead of logging into a soul-crushing Zoom call from your overpriced apartment in Austin, you're taking your first sip of real Colombian coffee on your balcony in Medellín, planning a weekend trip to a beach that looks like a screensaver.</p>
-                    <p>Sound like a fantasy? It's not. It’s called the **Colombia Digital Nomad Visa**, and I’m about to show you how it’s your ticket out of the rat race and into a life upgrade.</p>
+                    <p>Picture this: it's 9 AM on a Tuesday. Instead of logging into a soul-crushing Zoom call from your overpriced apartment in Austin, you're taking your first sip of real Colombian coffee on your balcony in Medellín, planning a weekend trip to a beach that looks like a screensaver.</p>
+                    <p>Sound like a fantasy? It's not. It’s called the <strong>Colombia Digital Nomad Visa</strong>, and I’m about to show you how it’s your ticket out of the rat race and into a life upgrade.</p>
                     <p>My name is Camila Ocampo. But forget the "lawyer" title for a second. Think of me as your "fixer" in Colombia. I’ve seen countless people like you—talented, ambitious, but burnt out—try to navigate this process alone. They get lost in bureaucratic black holes, waste money on bad advice, and end up more stressed than when they started.</p>
                     <blockquote>
                         <p>Before we dive in, I want to be completely transparent. The Digital Nomad visa is one of Colombia's newest (created in late 2022). This means everyone—lawyers and Ministry officials—is in a learning process. The landscape is shifting, and requirements can appear that aren't in the official regulations. My role is to navigate this uncertainty for you, using the experience we gain with each case to anticipate these challenges.</p>
                     </blockquote>
-                    <p>This guide is the conversation you wish you could have. No lawyer-speak, no fluff. Just the straight-up, unfiltered truth on how to make your Colombian dream a reality, from someone who knows the system inside and out.</p>
+                    <p>This guide is the conversation you wish you could have. No lawyer-speak, no fluff. Just the straight-up, unfiltered truth on how to make your Colombian dream a reality, from someone who knows the system inside and out.</p>
                 </section>
 
                 <section id="why-colombia">
                     <h2>Why Colombia Isn't Just a Destination, It's a Life Upgrade</h2>
                     <p>Let's be real, you're not just looking for a new place to open your laptop. You're looking for a better life. Here’s why Colombia delivers.</p>
                     <ul>
-                        <li><strong>The Cost of Living Shock (The Good Kind):</strong> That $2,000 rent for a tiny studio in the US? In Medellín or Bogotá, that gets you a stunning penthouse apartment in the best neighborhood, with money left over for weekly salsa classes, weekend trips, and eating out whenever you want.</li>
-                        <li><strong>Internet That Actually Works:</strong> Forget the myth of third-world internet. Major Colombian cities have fiber-optic connections that are fast, reliable, and cheap. You'll be on video calls with your team back home without a single glitch.</li>
-                        <li><strong>Your Built-In Community:</strong> Colombia is a global hub for remote workers. Cities like Medellín are packed with expats and fellow digital nomads. You'll find your tribe in days, not months, at the countless co-working spaces and language exchanges.</li>
-                        <li><strong>An End to Boredom:</strong> Here, you can be hiking in the Andes on Saturday and exploring a vibrant, historic city on Sunday. From the Amazon rainforest to the Caribbean coast, Colombia is a country that’s impossible to get bored in.</li>
+                        <li><strong>The Cost of Living Shock (The Good Kind):</strong> That $2,000 rent for a tiny studio in the US? In Medellín or Bogotá, that gets you a stunning penthouse apartment in the best neighborhood, with money left over for weekly salsa classes, weekend trips, and eating out whenever you want.</li>
+                        <li><strong>Internet That Actually Works:</strong> Forget the myth of third-world internet. Major Colombian cities have fiber-optic connections that are fast, reliable, and cheap. You'll be on video calls with your team back home without a single glitch.</li>
+                        <li><strong>Your Built-In Community:</strong> Colombia is a global hub for remote workers. Cities like Medellín are packed with expats and fellow digital nomads. You'll find your tribe in days, not months, at the countless co-working spaces and language exchanges.</li>
+                        <li><strong>An End to Boredom:</strong> Here, you can be hiking in the Andes on Saturday and exploring a vibrant, historic city on Sunday. From the Amazon rainforest to the Caribbean coast, Colombia is a country that’s impossible to get bored in.</li>
                     </ul>
                 </section>
                 
@@ -161,44 +451,38 @@
                     <p>Okay, let's talk about the paperwork. It looks scary, but with the right strategy, it's more like a tutorial level. Here's exactly what you need to gather.</p>
                     
                     <h3>1. Your Passport</h3>
-                    <p>This one's obvious, but the details matter. It needs to have at least **six (6) months** of life left in it from the day you apply. You'll upload a high-quality, color PDF scan of the main page. No shadows, no fingers, no excuses.</p>
+                    <p>This one's obvious, but the details matter. It needs to have at least <strong>six (6) months</strong> of life left in it from the day you apply. You'll upload a high-quality, color PDF scan of the main page. No shadows, no fingers, no excuses.</p>
                     
-                    <!-- Camila's Hack: Passport Validity -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>The Passport Validity Pro-Tip</h3></div><div class="hack-text"><p>The rule requires <strong>6 months of passport validity</strong>, but my pro-tip is to have at least <strong>12 to 24 months</strong>. This helps you avoid the tedious <strong>'Traspaso de Visa'</strong> (visa transfer) process if your passport expires before your visa does. A simple hack to save you future paperwork.</p></div></div>
 
                     <h3>2. The Visa Photo</h3>
-                    <p>You have to upload a digital passport-style photo. The background must be **perfectly white**. Look straight ahead, no smiling, no glasses, no hats. Your hair can't cover your ears or eyebrows. It must be a 3x4 cm JPG file, under 300kb.</p>
+                    <p>You have to upload a digital passport-style photo. The background must be <strong>perfectly white</strong>. Look straight ahead, no smiling, no glasses, no hats. Your hair can't cover your ears or eyebrows. It must be a 3x4 cm JPG file, under 300kb.</p>
                     
-                    <!-- Camila's Hack: Visa Photo -->
                     <div class="camilas-hack-box warning"><div class="hack-header"><div class="hack-icon">⚠️</div><h3 class="hack-title"><span>Camila's Hack:</span>The Visa Photo Trap</h3></div><div class="hack-text"><p>To avoid delays, do not use your phone camera for the visa photo. Visit a professional studio that specializes in passport or visa photographs and ensure you get the digital file. Trust me, this small step will prevent an inevitable rejection or requirement from the Ministry of Foreign Affairs.</p></div></div>
                     
                     <h3>3. Proof of Income</h3>
-                    <p>This is the big one. You need to show a steady income of at least 3x the Colombian minimum wage. For 2025, this is roughly **$1,100 USD per month**. You must prove you've earned at least this amount in **each of the last three months** using bank statements. Highlight every qualifying income deposit to make it obvious for the reviewer.</p>
+                    <p>This is the big one. You need to show a steady income of at least 3x the Colombian minimum wage. For 2025, this is roughly <strong>$1,100 USD per month</strong>. You must prove you've earned at least this amount in <strong>each of the last three months</strong> using bank statements. Highlight every qualifying income deposit to make it obvious for the reviewer.</p>
                     
-                    <!-- Camila's Hack: Shady Income -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>The Shady Income Source Trap</h3></div><div class="hack-text"><p>Officials are skeptical of income from platforms like Fiverr, Upwork, or crypto trading. They don't see it as stable. If this is you, the solution is to establish a US-based LLC. The platforms pay your LLC, and your LLC pays you a steady salary. It's a clean, professional workaround that they love.</p></div></div>
                     
                     <h3>4. Your Work "Story"</h3>
                     <p>You've shown the money, now you have to show where it comes from.</p>
                     <ul>
-                        <li><strong>If you're an Employee:</strong> You need a formal letter from your company (in English or Spanish) stating your name, your salary, and this magic phrase: "authorizes remote work from Colombia."</li>
-                        <li><strong>If you're a Freelancer:</strong> A letter or contract from your main client(s) detailing what you do and what they pay you.</li>
-                        <li><strong>If you're an Entrepreneur:</strong> A "motivational letter" explaining your digital business, your market (which must be outside Colombia), and how you're funding it.</li>
+                        <li><strong>If you're an Employee:</strong> You need a formal letter from your company (in English or Spanish) stating your name, your salary, and this magic phrase: "authorizes remote work from Colombia."</li>
+                        <li><strong>If you're a Freelancer:</strong> A letter or contract from your main client(s) detailing what you do and what they pay you.</li>
+                        <li><strong>If you're an Entrepreneur:</strong> A "motivational letter" explaining your digital business, your market (which must be outside Colombia), and how you're funding it.</li>
                     </ul>
                     
-                    <!-- Camila's Hack: Freelancer Kit -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hacks:</span>The Freelancer's Credibility Kit</h3></div><div class="hack-text"><p><strong>The Unwritten Rule:</strong> A recent, unwritten rule is that officials now want to see the business registration document of the company that pays you (e.g., your LLC's Certificate of Incorporation). Have it ready. If you apply from within Colombia, it needs to be apostilled.</p><p><strong>The Credibility Booster:</strong> Even if not explicitly requested, I advise you to submit a cover letter. This is your opportunity to introduce yourself, outline your freelance work and experience, and detail some of your key projects. Including links to your professional website or social media channels adds a layer of credibility that can make all the difference.</p></div></div>
 
                     <h3>5. International (All-Risk) Insurance</h3>
                     <p>You need a policy that covers you for everything in Colombia: accidents, illness, hospitalization, and even repatriation. This is non-negotiable.</p>
                     
-                    <!-- Camila's Hack: Insurance Strategy -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hacks:</span>The Smart Insurance Strategy</h3></div><div class="hack-text"><p><strong>To Minimize Risk:</strong> Don't buy a full-year policy upfront. Many of my clients use <a href="https://safetywing.com/nomad-insurance?referenceID=26321621&utm_source=26321621&utm_medium=Ambassador&selectedPlan=NOMAD_INSURANCE_ESSENTIAL" target="_blank" rel="noopener noreferrer">Safetywing</a> that offer compliant policies with a monthly payment plan. This way, you can cancel anytime.</p><p><strong>To Maximize Visa Length:</strong> If your goal is a two-year visa, my strong advice is to secure a two-year insurance policy upfront. A two-year policy almost always results in the full two-year visa grant. Many local Colombian companies offer these and will refund a large portion of your payment if your visa is denied.</p></div></div>
 
                     <h3>6. Criminal Background Check: The Unwritten Requirement</h3>
-                    <p>The law doesn't officially require it, but in practice, they ask for it almost every time. You need a national-level background check (e.g., an FBI check for US citizens) from your country of origin and any other country you've lived in for the past 3 years. It must be **apostilled and translated into Spanish** by a Colombian official translator.</p>
+                    <p>The law doesn't officially require it, but in practice, they ask for it almost every time. You need a national-level background check (e.g., an FBI check for US citizens) from your country of origin and any other country you've lived in for the past 3 years. It must be <strong>apostilled and translated into Spanish</strong> by a Colombian official translator.</p>
                     
-                    <!-- Camila's Hack: Apostille Exception -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>The Consulate Apostille Exception</h3></div><div class="hack-text"><p>While the law dictates that all foreign official documents must be professionally translated and apostilled, my experience has shown that in practice, certain consulates have a more flexible approach. If you are applying from locations like New York, Houston, San Francisco, Miami, Toronto, Italy, the Czech Republic or Jamaica, you may be able to save significant time and money, as these consulates often do not require the apostille or official translation. This is a crucial detail that can streamline your process.</p></div></div>
                     
                 </section>
@@ -207,17 +491,16 @@
                     <h2>The Application Gauntlet: Your Step-by-Step Survival Guide</h2>
                     <p>This is where you upload everything. The government's SITAC platform is quirky, unstable, and has a 10-minute timeout that will erase all your work. Be patient, and have everything ready. Here is the full road map:</p>
                     
-                    <!-- Road Map HTML Inserted Here -->
-                    <div class="my-12">
-                        <div class="relative">
+                    <div class="mt-12 mb-12">
+                        <div style="position: relative;">
                             <div id="timeline-line" aria-hidden="true"></div>
-                            <div id="timeline-steps" class="space-y-12">
+                            <div id="timeline-steps">
                                 <div class="timeline-step"><div class="timeline-icon">1</div><div class="timeline-content"><h3>Study This Guide</h3><span>1 Hour</span><p>Gain clarity and compile your document checklist.</p></div></div>
                                 <div class="timeline-step"><div class="timeline-icon">2</div><div class="timeline-content"><h3>Document Collection</h3><span>2-4 Weeks</span><p>Gather statements, work proof, translations, and health insurance.</p></div></div>
                                 <div class="timeline-step"><div class="timeline-icon">3</div><div class="timeline-content"><h3>Portal & Official Review</h3><span>Up to 30 days</span><p>Complete online form, upload documents. The study period begins.</p></div></div>
-                                <div class="timeline-step"><div class="timeline-icon timeline-icon-blue">4</div><div class="timeline-content timeline-content-blue"><h3 class="text-blue-800">'Requerimiento'</h3><span>Up to 10 days</span><p>An official may request more info. Provide a formal response.</p></div></div>
-                                <div class="timeline-step"><div class="timeline-icon timeline-icon-green">5</div><div class="timeline-content"><h3 class="text-green-800">Visa Approved!</h3><span>1-3 Days</span><p>Congratulations! Pay the fee and download your E-Visa.</p></div></div>
-                                <div class="timeline-step"><div class="timeline-icon timeline-icon-red">6</div><div class="timeline-content timeline-content-red"><h3 class="text-red-800">'Inadmitido'</h3><span>Adds 1-2 Weeks+</span><p>A common hurdle. The application is returned. Correct and resubmit.</p></div></div>
+                                <div class="timeline-step"><div class="timeline-icon timeline-icon-blue">4</div><div class="timeline-content timeline-content-blue"><h3 style="color: #1e40af;">'Requerimiento'</h3><span>Up to 10 days</span><p>An official may request more info. Provide a formal response.</p></div></div>
+                                <div class="timeline-step"><div class="timeline-icon timeline-icon-green">5</div><div class="timeline-content"><h3 style="color: #166534;">Visa Approved!</h3><span>1-3 Days</span><p>Congratulations! Pay the fee and download your E-Visa.</p></div></div>
+                                <div class="timeline-step"><div class="timeline-icon timeline-icon-red">6</div><div class="timeline-content timeline-content-red"><h3 style="color: #991b1b;">'Inadmitido'</h3><span>Adds 1-2 Weeks+</span><p>A common hurdle. The application is returned. Correct and resubmit.</p></div></div>
                                 <div class="timeline-step"><div class="timeline-icon">7</div><div class="timeline-content"><h3>Register Visa</h3><span>1-5 Days</span><p>Crucial post-approval step. Register your E-Visa with Migración Colombia.</p></div></div>
                                 <div class="timeline-step"><div class="timeline-icon">8</div><div class="timeline-content"><h3>Get Cédula Appointment</h3><span>1-5 Days</span><p>Schedule your appointment online to later pick up your Cédula.</p></div></div>
                                 <div class="timeline-step"><div class="timeline-icon">9</div><div class="timeline-content"><h3>Pick up Cédula</h3><span>1 Day</span><p>The final step. Go to Migración office to pick up your physical ID card.</p></div></div>
@@ -225,34 +508,29 @@
                         </div>
                     </div>
 
-                    <!-- Camila's Hack: 5MB Limit -->
                     <div class="camilas-hack-box warning"><div class="hack-header"><div class="hack-icon">⚠️</div><h3 class="hack-title"><span>Camila's Hack:</span>The 5 MB Upload Limit</h3></div><div class="hack-text"><p>The entire application, with all your documents combined, cannot exceed 5 MB. Yes, you read that right. It's a tiny limit. Scan your documents in low-to-medium resolution to make sure everything fits. A bad scan is the #1 reason for immediate (and completely avoidable) rejections.</p></div></div>
                     
-                    <!-- Camila's Hack: Payment Portal -->
                     <div class="camilas-hack-box warning"><div class="hack-header"><div class="hack-icon">⚠️</div><h3 class="hack-title"><span>Camila's Hack:</span>The Payment Portal Trap</h3></div><div class="hack-text"><p>The government's payment portal is notoriously bad at accepting foreign credit cards. It's a huge point of frustration. Have a backup plan, somebody that can make the payment for you locally to avoid this headache. You have 10 days to make each payment after being notified; miss it, and your application is cancelled.</p></div></div>
 
-                    <!-- Camila's Hack: Jurisdiction -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>The "Solicitud Ante" Jurisdiction Trap</h3></div><div class="hack-text"><p>Just before you finalize your application, the system will ask you to select "Solicitud ante," which means "Applying to." This is a crucial step, as you must choose the Colombian consulate that has jurisdiction over your case. My advice: never rely on geographical assumptions. Always check the consulate's website for their "Circunscripción" or "District" to confirm.</p><ul><li><a href="https://estadosunidos.embajada.gov.co/" target="_blank" rel="noopener noreferrer">USA</a></li><li><a href="https://canada.embajada.gov.co/" target="_blank" rel="noopener noreferrer">Canada</a></li><li><a href="https://alemania.embajada.gov.co/" target="_blank" rel="noopener noreferrer">Germany</a></li><li><a href="https://tramites.cancilleria.gov.co/ApostillaLegalizacion/directorio/misionesExterior.aspx" target="_blank" rel="noopener noreferrer">Other Countries</a></li></ul></div></div>
                     
-                    <!-- Camila's Hack: Proof -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>Before You Click 'Send'</h3></div><div class="hack-text"><p>Before you click 'Send' on your application, my strongest advice is to save the final review page as a PDF. This document serves as crucial proof in case your visa is later deemed Inadmissible or receives a Requirement due to a misunderstanding.</p></div></div>
                 </section>
                 
                 <section id="after-approval">
                     <h2>You Got the Visa! Congrats. Now, Don't Screw It Up.</h2>
-                    <p>Getting the e-Visa is a huge win, but you have two urgent, mandatory tasks to complete within **15 calendar days** if you are already in Colombia. If you are not, just do it before you travel.</p>
+                    <p>Getting the e-Visa is a huge win, but you have two urgent, mandatory tasks to complete within <strong>15 calendar days</strong> if you are already in Colombia. If you are not, just do it before you travel.</p>
                     <ol>
                         <li><strong>Register Your Visa:</strong> This is done online with Migración Colombia and is a prerequisite for the next step.</li>
                         <li><strong>Get Your Cédula de Extranjería (Foreigner ID):</strong> This is your official Colombian ID. You must start this process by scheduling an appointment on the Migracion Colombia Web page.</li>
                     </ol>
                     
-                    <!-- Camila's Hack: Cédula Appointment -->
                     <div class="camilas-hack-box pro-tip"><div class="hack-header"><div class="hack-icon">💡</div><h3 class="hack-title"><span>Camila's Hack:</span>The Cédula Appointment Secrets</h3></div><div class="hack-text"><p><strong>The Sunday 5 PM Secret:</strong> Getting an appointment for your Cédula in Bogotá or Medellín is incredibly difficult. The system is always booked. But here's the secret: new appointment slots are released every Sunday at 5:00 PM, Colombia time. Be online and ready at that exact time, and you'll get a spot. This tip alone will save you weeks of stress.</p><p><strong>Plan B - The "Nearby City" Strategy:</strong> If you're still struggling to find a slot in Bogotá, consider booking in a nearby capital city like Tunja (2h) or Ibagué (4h). For Medellín, Pereira (3h) is a great alternative.</p></div></div>
                 </section>
 
                 <section id="tax-strategy">
                     <h2>The Tax Man Cometh... Or Does He? A Simple Strategy</h2>
-                    <p>This is a huge source of fear, but it shouldn't be. You become a tax resident in Colombia only if you stay for more than **183 days** in a 365-day period. My strongest recommendation for Nómada Digital visa holders is simple: **keep your financial life outside of Colombia.**</p>
+                    <p>This is a huge source of fear, but it shouldn't be. You become a tax resident in Colombia only if you stay for more than <strong>183 days</strong> in a 365-day period. My strongest recommendation for Nómada Digital visa holders is simple: <strong>keep your financial life outside of Colombia.</strong></p>
                     <ul>
                         <li>Use your foreign credit and debit cards for everything.</li>
                         <li>Avoid opening a Colombian bank account unless absolutely necessary.</li>
@@ -266,23 +544,22 @@
                     <p>Look, you could try to do all this yourself. It’s like trying to hike Monserrate in flip-flops. You *might* make it to the top, but you'll probably be sweaty, frustrated, and covered in blisters. Or, you could have a guide. A 'fixer' who knows the shortcuts, speaks the unwritten language of the bureaucrats, and anticipates the problems before they happen. Someone who turns a potential bureaucratic nightmare into a smooth, predictable process.</p>
                     <p>That’s where I come in.</p>
                     
-                    <div class="my-12 p-8 bg-blue-50 rounded-xl border-l-4 border-blue-500">
-                        <!-- Foto de Camila Añadida -->
-                        <div class="not-prose">
+                    <div class="bio-box">
+                        <div>
                             <img src="https://static.wixstatic.com/media/d8d541_e08ab4e7b0124418a3f5b7e014d1f531~mv2.png" 
                                  alt="Camila Ocampo, Expert Immigration Lawyer" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg object-cover"
+                                 class="bio-img"
                                  onerror="this.onerror=null;this.src='https://placehold.co/128x128/EBF4FF/333333?text=Camila';">
                         </div>
-                        <h3 class="!mt-0 text-center">Meet Camila Ocampo: Your Unfair Advantage</h3>
-                        <p>I'm not your typical lawyer. I don't speak in confusing legal jargon. My job is to be your unfair advantage. I'm the person the insiders recommend because my team and I are obsessed with one thing: **getting your visa approved, period.**</p>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #1e3a8a;">Meet Camila Ocampo: Your Unfair Advantage</h3>
+                        <p>I'm not your typical lawyer. I don't speak in confusing legal jargon. My job is to be your unfair advantage. I'm the person the insiders recommend because my team and I are obsessed with one thing: <strong>getting your visa approved, period.</strong></p>
                         <p>While others are stuck in paperwork hell, my clients are already ordering their second bandeja paisa. We've helped hundreds of people just like you navigate this process flawlessly. We know which consulates are picky, what "unwritten rules" have changed this month, and how to present your application so the official's only option is to say "Approved."</p>
                         
                         <blockquote>
                             <p>"Working with Camila was the best decision I made... I wasted months trying to figure it out on my own."<br>
                             <strong>- Alex, Software Developer from California</strong></p>
                         </blockquote>
-                        <a href="https://visanomadadigitalcolombia.com/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block btn bg-blue-600 text-white hover:bg-blue-700 py-3 px-6 text-lg font-bold rounded-md" style="text-decoration: none;">See Our Full Legal Service</a>
+                        <a href="https://visanomadadigitalcolombia.com/" target="_blank" rel="noopener noreferrer" class="btn btn-blue mt-4">See Our Full Legal Service</a>
                     </div>
                 </section>
                 
@@ -300,114 +577,97 @@
 
                 <section id="faq">
                     <h2>Frequently Asked Questions</h2>
-                     <div class="space-y-6">
+                      <div>
                         <div class="faq-item">
-                            <h3 class="!mt-0">What is the total investment for the Digital Nomad Visa?</h3>
+                            <h3>What is the total investment for the Digital Nomad Visa?</h3>
                             <p>The total cost is a combination of our legal fees and government fees. Our full legal service fee is <strong>$450 USD</strong>. Government fees are approximately <strong>$324 USD</strong> ($54 for the study + $270 for issuance). You must also budget for your Cédula (approx. $70 USD), health insurance, and any necessary document translations.</p>
                         </div>
                         <div class="faq-item">
-                            <h3 class="!mt-0">Can I bring my family with me on a Digital Nomad Visa?</h3>
+                            <h3>Can I bring my family with me on a Digital Nomad Visa?</h3>
                             <p>Yes, you can apply for beneficiary visas for your spouse and/or children under 25. They will need to prove their relationship to you. This is a separate application process for each family member that we can also assist with.</p>
                         </div>
                          <div class="faq-item">
-                            <h3 class="!mt-0">What if my application is deemed 'Inadmissible'?</h3>
+                            <h3>What if my application is deemed 'Inadmissible'?</h3>
                             <p>An 'Inadmissible' status means the Ministry requires more information or a correction. It is not a final denial. Our full legal service includes resubmitting the application to address these requirements at no additional cost for our legal fees.</p>
                         </div>
                          <div class="faq-item">
-                            <h3 class="!mt-0">Can I apply for this visa from within Colombia?</h3>
+                            <h3>Can I apply for this visa from within Colombia?</h3>
                             <p>Yes, you can apply for the Digital Nomad Visa while you are in Colombia as a tourist. If your application is approved, you will not need to leave the country. We will guide you on the visa registration and Cédula process, which must also be completed inside Colombia.</p>
                         </div>
-                     </div>
+                      </div>
                 </section>
 
             </article>
 
-            <!-- Sticky Sidebar (Visible on large screens) -->
-            <aside class="lg:col-span-1 lg:order-2 order-1">
-                <div class="sticky-nav space-y-8">
-                    <!-- Download Form -->
-                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                        <h3 class="text-xl font-bold text-center mb-4">Download the PDF Version</h3>
+            <aside class="sidebar">
+                <div class="sticky-wrapper">
+                    <div class="sidebar-box">
+                        <h3 class="text-center">Download the PDF Version</h3>
                         <form id="guideForm">
-                            <div class="space-y-4">
-                                <div>
-                                    <label for="email" class="sr-only">Email address</label>
-                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-100 text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500" placeholder="Enter your email" required>
-                                </div>
-                                <button type="submit" class="w-full py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">Download PDF Guide</button>
+                            <div>
+                                <label for="email" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Email address</label>
+                                <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
                             </div>
+                            <button type="submit" class="btn btn-blue w-full">Download PDF Guide</button>
                         </form>
-                        <div id="form-feedback" class="text-center mt-3 text-sm"></div>
+                        <div id="form-feedback" class="text-center mt-4" style="font-size: 0.875rem;"></div>
                     </div>
                     
-                    <!-- Table of Contents -->
-                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                        <h3 class="text-xl font-bold mb-4">Guide Sections</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#intro" class="text-gray-600 hover:text-blue-600 font-medium">Introduction</a></li>
-                            <li><a href="#why-colombia" class="text-gray-600 hover:text-blue-600 font-medium">Why Colombia?</a></li>
-                            <li><a href="#requirements" class="text-gray-600 hover:text-blue-600 font-medium">The Nitty-Gritty (Requirements)</a></li>
-                            <li><a href="#application-guide" class="text-gray-600 hover:text-blue-600 font-medium">The Application Gauntlet</a></li>
-                            <li><a href="#after-approval" class="text-gray-600 hover:text-blue-600 font-medium">After Approval</a></li>
-                            <li><a href="#tax-strategy" class="text-gray-600 hover:text-blue-600 font-medium">A Simple Tax Strategy</a></li>
-                             <li><a href="#why-me" class="text-gray-600 hover:text-blue-600 font-medium">Why You Need a 'Fixer'</a></li>
-                            <li><a href="#newsroom" class="text-gray-600 hover:text-blue-600 font-medium">Latest News & Guides</a></li>
-                            <li><a href="#faq" class="text-gray-600 hover:text-blue-600 font-medium">FAQ</a></li>
+                    <div class="sidebar-box">
+                        <h3>Guide Sections</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#intro">Introduction</a></li>
+                            <li><a href="#why-colombia">Why Colombia?</a></li>
+                            <li><a href="#requirements">The Nitty-Gritty (Requirements)</a></li>
+                            <li><a href="#application-guide">The Application Gauntlet</a></li>
+                            <li><a href="#after-approval">After Approval</a></li>
+                            <li><a href="#tax-strategy">A Simple Tax Strategy</a></li>
+                             <li><a href="#why-me">Why You Need a 'Fixer'</a></li>
+                            <li><a href="#newsroom">Latest News & Guides</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </div>
 
-                    <!-- CTA Box -->
-                     <div class="bg-green-50 p-6 rounded-lg shadow-md border border-green-200 text-center">
-                        <h3 class="text-xl font-bold text-green-800 mb-3">Feeling Overwhelmed?</h3>
-                        <p class="text-green-700 mb-4">Let an expert handle the entire process for you, from start to finish.</p>
-                        <a href="https://visanomadadigitalcolombia.com/" target="_blank" rel="noopener noreferrer" class="btn w-full bg-green-600 text-white hover:bg-green-700 py-3 px-4 text-base font-bold rounded-md block" style="text-decoration: none;">View Full Legal Service</a>
+                    <div class="sidebar-box" style="background-color: #f0fdf4; border-color: #bbf7d0;">
+                        <h3 style="color: #166534; text-align: center;">Feeling Overwhelmed?</h3>
+                        <p style="color: #15803d; margin-bottom: 1rem; text-align: center;">Let an expert handle the entire process for you, from start to finish.</p>
+                        <a href="https://visanomadadigitalcolombia.com/" target="_blank" rel="noopener noreferrer" class="btn btn-green w-full">View Full Legal Service</a>
                     </div>
                 </div>
             </aside>
         </div>
     </main>
 
-    <!-- FINAL CTA -->
-    <section class="py-20 md:py-28 bg-blue-800 text-white section-fade-in">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Stop Dreaming. Start Packing.</h2>
-            <p class="text-xl md:text-2xl font-light mb-10 max-w-3xl mx-auto">You've read the guide. You know the hacks. The only thing left is to start. Let our expert legal team handle the complexities so you can focus on your adventure.</p>
-            <a href="https://wa.me/573223395612?text=Hello%20Camila,%20I've%20read%20the%20Digital%20Nomad%20Visa%20guide%20and%20I'm%20ready%20to%20start%20my%20case." target="_blank" class="btn bg-green-500 hover:bg-green-600 text-white text-xl py-4 px-10 focus:ring-green-400">Chat with Us on WhatsApp</a>
+    <section style="background-color: var(--blue-800); color: white; padding: 6rem 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Stop Dreaming. Start Packing.</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto; opacity: 0.9;">You've read the guide. You know the hacks. The only thing left is to start. Let our expert legal team handle the complexities so you can focus on your adventure.</p>
+            <a href="https://wa.me/573223395612?text=Hello%20Camila,%20I've%20read%20the%20Digital%20Nomad%20Visa%20guide%20and%20I'm%20ready%20to%20start%20my%20case." target="_blank" class="btn btn-green" style="font-size: 1.25rem; padding: 1rem 2.5rem;">Chat with Us on WhatsApp</a>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-400 py-16">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <footer>
+        <div class="container">
             <a href="https://www.colombianpassport.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="Colombian Passport Logo" class="h-12 mx-auto mb-6" onerror="this.onerror=null;this.src='https://placehold.co/200x50/374151/9CA3AF?text=ColombianPassport.com';">
+                <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="Colombian Passport Logo" class="logo-img mx-auto mb-6" onerror="this.onerror=null;this.src='https://placehold.co/200x50/374151/9CA3AF?text=ColombianPassport.com';">
             </a>
-            <a href="https://www.colombianpassport.com" target="_blank" rel="noopener noreferrer" class="mb-1 text-lg block hover:text-blue-400 transition-colors">Colombian Passport</a>
-            <p class="mb-2 mt-4">&copy; <span id="currentYear"></span> ColombianPassport.com. All Rights Reserved.</p>
-            <p class="text-sm mb-6">Expert legal advisory for your immigration journey.</p>
-            <div class="space-x-6">
-                <a href="https://www.colombianpassport.com/privacy-policy" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                <a href="mailto:camila@colombianpassport.com" class="hover:text-blue-400 transition-colors">camila@colombianpassport.com</a>
+            <a href="https://www.colombianpassport.com" target="_blank" rel="noopener noreferrer" style="display: block; font-size: 1.125rem; margin-bottom: 0.5rem;">Colombian Passport</a>
+            <p>&copy; <span id="currentYear"></span> ColombianPassport.com. All Rights Reserved.</p>
+            <p style="font-size: 0.875rem; margin-bottom: 1.5rem;">Expert legal advisory for your immigration journey.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="https://www.colombianpassport.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                <a href="mailto:camila@colombianpassport.com">camila@colombianpassport.com</a>
             </div>
         </div>
     </footer>
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 flex flex-col sm:flex-row items-center justify-center text-center space-y-2 sm:space-y-0 sm:space-x-4 z-50" style="display: none;">
-        <p class="text-sm">We use cookies to improve your experience and for marketing purposes. By continuing, you agree to our <a href="https://www.colombianpassport.com/privacy-policy" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-400">Privacy Policy</a>.</p>
-        <button id="accept-cookies" class="btn bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg flex-shrink-0" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">Accept</button>
+    <div id="cookie-consent-banner">
+        <p>We use cookies to improve your experience and for marketing purposes. By continuing, you agree to our <a href="https://www.colombianpassport.com/privacy-policy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Privacy Policy</a>.</p>
+        <button id="accept-cookies" class="btn btn-green" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Accept</button>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Mobile Menu
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
             
             // Smooth Scroll for Anchor Links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -418,7 +678,7 @@
                     if (targetElement) {
                         // Offset for sticky nav
                         const navHeight = document.querySelector('nav').offsetHeight;
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight - 20; // 20px extra buffer
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight - 20; 
                         
                         window.scrollTo({
                             top: targetPosition,
@@ -427,18 +687,6 @@
                     }
                 });
             });
-            
-            // Section Fade-in Animation
-            const sections = document.querySelectorAll('.section-fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            sections.forEach(section => observer.observe(section));
 
             // Set Current Year in Footer
             document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -453,11 +701,11 @@
                     const email = form.querySelector('#email').value;
                     if (!email) {
                         feedback.textContent = 'Please enter a valid email.';
-                        feedback.className = 'text-center mt-3 text-sm text-red-500';
+                        feedback.style.color = '#ef4444';
                         return;
                     }
                     
-                    // Push GTM event for conversion
+                    // Push GTM event
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         'event': 'guide_download',
@@ -465,20 +713,19 @@
                     });
                     
                     feedback.textContent = 'Thank you! Your download will start shortly...';
-                    feedback.className = 'text-center mt-3 text-sm text-green-500';
+                    feedback.style.color = '#22c55e';
                     
                     // --- IMPORTANTE: Reemplazar '#' con la URL del PDF ---
-                    const pdfUrl = '#'; // <--- Pega tu enlace de PDF aquí
+                    const pdfUrl = '#'; 
                     // ----------------------------------------------------
 
                     if(pdfUrl === '#') {
                         console.error('PDF URL not set.');
                         feedback.textContent = 'Download error. Please try again later.';
-                        feedback.className = 'text-center mt-3 text-sm text-red-500';
+                        feedback.style.color = '#ef4444';
                         return;
                     }
                     
-                    // Simulate download
                     const link = document.createElement('a');
                     link.href = pdfUrl;
                     link.download = 'Colombian-Digital-Nomad-Visa-Guide.pdf';
@@ -489,7 +736,6 @@
                     form.reset();
                     setTimeout(() => {
                         feedback.textContent = '';
-                        feedback.classList.remove('text-green-500');
                     }, 5000);
                 });
             }
@@ -519,9 +765,7 @@
                     if (lastStep) {
                         const lastStepCircle = lastStep.querySelector('.timeline-icon');
                         if (lastStepCircle) {
-                            // Calculate where the center of the last circle is relative to the top of the steps container
                             const lastStepTop = lastStep.offsetTop + lastStepCircle.offsetTop + (lastStepCircle.offsetHeight / 2);
-                            // Set the height of the line
                             timelineLine.style.height = (lastStepTop - (lastStepCircle.offsetHeight / 2)) + 'px';
                         }
                     }
